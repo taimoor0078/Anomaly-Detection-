@@ -1,0 +1,6 @@
+metric,value,interpretation
+Differentiation rate (proposed vs sensitivity-only baseline),4.57%,How often identical-sensitivity data gets different encryption due to real-time trust (this IS the novelty check)
+Upgrade rate (proposed stronger than baseline when they differ),4.57%,"Confirms low-trust access correctly triggers STRONGER encryption, not random noise"
+Detection alignment (low trust vs ground-truth risky label),96.16%,How well trust score threshold (<35) matches true Unsecure/Breached labels
+Avg encryption latency - PROPOSED (ms/MB),1.628,Latency overhead of CyberTrust-AI's adaptive policy
+Avg encryption latency - BASELINE-A sensitivity-only (ms/MB),1.525,Latency overhead of static sensitivity-only policy
